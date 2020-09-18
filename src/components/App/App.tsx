@@ -1,16 +1,16 @@
 import React from 'react';
-import Input from 'Components/Input/Input';
+import { useSelector } from 'react-redux';
+import { RootState } from 'Components/App/rootReducer';
 import 'Components/App/App.css';
 
 const App: React.FC = () => {
+	const { tileCount } = useSelector(
+		( state: RootState ) => state.project
+	);
+
 	return(
 			<div className='hello-flex'>
-				<div>
-					<h1>Hello World</h1>
-				</div>
-				<div>
-					<Input id="hello-input" label="Hello Input" />
-				</div>
+				tileCount is {tileCount}
 			</div>
 	);
 }
