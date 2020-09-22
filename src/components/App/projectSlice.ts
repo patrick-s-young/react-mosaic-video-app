@@ -1,7 +1,10 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
+export type TileCount = 2 | 3 | 4 | 6 | 9;
+export const tileCounts: Array<TileCount> = [2, 3, 4, 6, 9];
+
 export interface ProjectI {
-  tileCount: number
+  tileCount: TileCount
 }
 
 const initialState: ProjectI = {
