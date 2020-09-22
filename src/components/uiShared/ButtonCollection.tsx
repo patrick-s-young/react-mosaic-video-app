@@ -1,20 +1,23 @@
 import React from 'react';
-import Button from 'Components/ClickTouch/Button/Button';
+import Button from 'Components/uiShared/Button';
+import { ButtonCollectionI, ButtonConfigI } from 'Components/MosaicSelector/MosaicSelector.config';
 import { v1 as uuid } from 'uuid';
 
+
 const ButtonCollection = ({
-  buttonConfig,
-  onClickTouch,
-  style
-}) => {
+  currentStateValue,
+  buttonCollectionConfig,
+  onClickCallback
+}: ButtonCollectionI) => {
   return (
-    <div style={style}>
-      { buttonConfig.map((item) =>
+    <div className={buttonCollectionConfig.className}>
+      { buttonCollectionConfig.buttonConfig.map((button: ButtonConfigI) =>
           <Button 
-            onClickTouch={onClickTouch}
-            name={item.name}
-            action={item.action}
-            style={item.style}
+            onClickCallback={onClickCallback}
+            stateValue={button.stateValue}
+            isEnabled={button.stateValue !== currentStateValue}
+            imagePath={button.imagePath}
+            className={button.className}
             key={uuid()}
           />)
       }
