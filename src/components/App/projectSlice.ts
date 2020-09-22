@@ -15,7 +15,7 @@ const projectSlice = createSlice({
   name: 'project',
   initialState,
   reducers: {
-    setTileCount (state, action: PayloadAction<number>) {
+    setTileCount (state, action: PayloadAction<TileCount>) {
       const tileCount = action.payload;
       state.tileCount = tileCount;
     }
