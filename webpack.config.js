@@ -31,7 +31,9 @@ module.exports = {
       }
     ]
   },
-  
+  devServer: {
+    contentBase: path.resolve(__dirname, './public'),
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html'
