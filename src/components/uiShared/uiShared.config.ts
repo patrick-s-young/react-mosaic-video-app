@@ -1,5 +1,17 @@
-import { TileCount, FileStatus } from 'Components/App/projectSlice';
+import { 
+  TileCount,          // <MosiacSelector>
+  FileStatus,         // <FileSelector>
+  BackgroundFrame     // <BackgroundSelector>
+} from 'Components/App/projectSlice';
 
+
+
+// <ContinuousSlider> project-specific config
+export type SliderStateValue = BackgroundFrame
+
+
+
+// <Button> and <ButtonCollection> project-specific config
 export type StateValue =  TileCount | FileStatus
 
 export interface ButtonConfigI {
