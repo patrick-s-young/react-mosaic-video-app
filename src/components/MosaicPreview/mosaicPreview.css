@@ -1,8 +1,7 @@
 .mosaicPreview-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  height: 20vh;
-  width: 20vh;
+  height: 320px;
+  width: 320px;
   background-color: lightblue;
 }
