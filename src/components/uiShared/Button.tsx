@@ -1,19 +1,20 @@
 import React from 'react';
-import { ButtonI } from 'Components/MosaicSelector/MosaicSelector.config';
+import { ButtonProps } from 'Components/uiShared/uiShared.config';
 
-const Button: React.FC<ButtonI> = ({
+const Button: React.FC<ButtonProps> = ({
   onClickCallback,
   stateValue,
   isEnabled,
   imagePath,
-  className
-}: ButtonI) => {
+  className,
+  altText
+}) => {
   
   return (
     <div className={className}>
       { isEnabled ? 
-          <img src={imagePath.on} onClick={() => onClickCallback(stateValue)} alt={`Click for ${stateValue}-tile video mosaic`} /> 
-        : <img src={imagePath.off} />
+          <img src={imagePath.on} onClick={() => onClickCallback(stateValue)} alt={altText} /> 
+        : <img src={imagePath.off} alt={altText} />
       }
     </div>
   );

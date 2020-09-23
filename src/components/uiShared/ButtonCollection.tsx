@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from 'Components/uiShared/Button';
-import { ButtonCollectionI, ButtonConfigI } from 'Components/MosaicSelector/MosaicSelector.config';
+import { ButtonCollectionProps, ButtonConfigI } from 'Components/uiShared/uiShared.config';
 import { v1 as uuid } from 'uuid';
 
 
@@ -8,7 +8,7 @@ const ButtonCollection = ({
   currentStateValue,
   buttonCollectionConfig,
   onClickCallback
-}: ButtonCollectionI) => {
+}: ButtonCollectionProps) => {
   return (
     <div className={buttonCollectionConfig.className}>
       { buttonCollectionConfig.buttonConfig.map((button: ButtonConfigI) =>
@@ -18,6 +18,7 @@ const ButtonCollection = ({
             isEnabled={button.stateValue !== currentStateValue}
             imagePath={button.imagePath}
             className={button.className}
+            altText={button.altText}
             key={uuid()}
           />)
       }
