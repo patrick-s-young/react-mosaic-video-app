@@ -1,13 +1,11 @@
-.buttonClass {
+.mosaic-selector-button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex: 50vw;
 }
 
-.buttonCollectionClass {
+.mosaic-selector-button-collection {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex: 50vw;
 }

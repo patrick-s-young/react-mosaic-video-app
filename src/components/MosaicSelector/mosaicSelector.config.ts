@@ -1,44 +1,20 @@
-import { tileCounts, TileCount } from 'Components/App/projectSlice';
 
-export interface ButtonI {
-  onClickCallback: (newStateValue: TileCount) => void
-  stateValue: TileCount
-  isEnabled: boolean
-  imagePath: { on: string, off: string }
-  className: string
-}
+import { tileCounts } from 'Components/App/projectSlice';
+import { ButtonConfigI, ButtonCollectionConfigI } from 'Components/uiShared/uiShared.config';
 
-export interface ButtonConfigI {
-  stateValue: TileCount
-  className: string
-  imagePath: { on: string, off: string }
-}
-
-export interface ButtonCollectionI {
-  currentStateValue: TileCount
-  buttonCollectionConfig: ButtonCollectionConfigI
-  onClickCallback: (newStateValue: TileCount) => void
-}
-
-export interface ButtonCollectionConfigI {
-  className: string
-  buttonConfig: Array<ButtonConfigI>
-}
-
-
-const buttonConfig: Array<ButtonConfigI> = tileCounts.map(tileCount => {
+const mosaicSelectorButtonConfig: Array<ButtonConfigI> = tileCounts.map(tileCount => {
   return {
     stateValue: tileCount,
-    className: 'buttonClass',
+    className: 'mosaic-selector-button',
     imagePath: {
       on: `/images/0${tileCount}_mosaic_selector_64x64_on.png`,
       off: `/images/0${tileCount}_mosaic_selector_64x64_off.png`
-    }
+    },
+    altText: `Click for ${tileCount}-tile video mosaic`
   }
 });
 
-export const buttonCollectionConfig: ButtonCollectionConfigI = {
-    className: 'buttonCollectionClass',
-    buttonConfig
+export const mosaicSelectorConfig: ButtonCollectionConfigI = {
+  className: 'mosaic-selector-button-collection',
+  buttonConfig: mosaicSelectorButtonConfig
 }
-
