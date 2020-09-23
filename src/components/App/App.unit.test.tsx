@@ -13,9 +13,10 @@ beforeAll(() => {
   );
 });
 
-test('should have the right message in the dom', () => {
-  const message = 'tileCount is 3';
-  expect(screen.getByText(message)).toBeInTheDocument();
+test('should display default redux state values', () => {
+  expect(screen.getByTitle('Mosaic video preview')).toHaveTextContent('tileCount is 3');
+  expect(screen.getByTitle('Mosaic video preview')).toHaveTextContent('fileStatus is 0');
+
 });
 
 afterAll(cleanup);
