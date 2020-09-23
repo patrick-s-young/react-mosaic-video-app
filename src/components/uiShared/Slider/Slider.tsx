@@ -1,7 +1,7 @@
 import React, { useRef, useLayoutEffect, useCallback } from 'react';
-import SliderKnob from 'Slider/SliderKnob';
-import SliderTrack from 'Slider/SliderTrack';
-import 'Slider/slider.css';
+import SliderKnob from 'Components/uiShared/Slider/SliderKnob';
+import SliderTrack from 'Components/uiShared/Slider/SliderTrack';
+import 'Components/uiShared/Slider/slider.css';
 
 type TrackAttrRef = {
   element: HTMLDivElement,

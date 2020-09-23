@@ -1,5 +1,5 @@
-import React, { forwardRef } from 'react'
-import 'Slider/slider.css'
+import React, { forwardRef } from 'react';
+import 'Components/uiShared/Slider/slider.css';
 
 type Props = {};
 
