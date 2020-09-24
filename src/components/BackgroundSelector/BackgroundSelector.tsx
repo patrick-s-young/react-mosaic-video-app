@@ -2,7 +2,6 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from 'Components/App/rootReducer';
 import { setBackgroundFrame, BackgroundFrame, backgroundFramesMax } from 'Components/App/projectSlice';
-import Slider from 'Components/uiShared/Slider/Slider';
 
 const BackgroundSelector: React.FC = () => {
   const dispatch = useDispatch();
@@ -11,17 +10,23 @@ const BackgroundSelector: React.FC = () => {
     (state: RootState) => state.project
   );
 
-  const onSlideHandler = (scalerValue: number) => {
-    const newBackgroundFrame: BackgroundFrame = Math.floor( scalerValue * backgroundFramesMax);
-    dispatch(setBackgroundFrame(newBackgroundFrame));
+  const onSlideHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    dispatch(setBackgroundFrame(parseInt(e.target.value) as BackgroundFrame));
   }
 
   return (
-    <>
-      <Slider
-        sliderCallback={onSlideHandler}
+    <div className="slidecontainer">
+      <input 
+        type='range'
+        min='0'
+        max={backgroundFramesMax - 1} 
+        step='1'
+        defaultValue={backgroundFrame} 
+        className='slider' 
+        onChange={onSlideHandler}
+        data-testid='backgroundSelectorInput'
       />
-    </>
+    </div>
   );
 }
 
