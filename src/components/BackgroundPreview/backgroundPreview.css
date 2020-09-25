@@ -1,0 +1,7 @@
+.backgroundPreview-container {
+  display: flex;
+  align-items: center;
+  height: 320px;
+  width: 320px;
+  background-color: rgb(201, 115, 201);
+}
