@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import MosaicPreview from 'Components/MosaicPreview/MosaicPreview';
-import MosaicSelector from 'Components/MosaicSelector/MosaicSelector';
-import BackgroundPreview from 'Components/BackgroundPreview/BackgroundPreview';
-import BackgroundSelector from 'Components/BackgroundSelector/BackgroundSelector';
-import FileSelector from 'Components/FileSelector/FileSelector';
-import loadVideoMetadata, { VideoMetadata } from './../../utils/loadVideoMetadata';
-import { backgroundFramesMax } from 'Components/App/projectSlice';
-import 'Components/App/App.css';
+import MosaicPreview from 'features/mosaicPreview/MosaicPreview';
+import MosaicSelector from 'features/mosaicPreview/MosaicSelector';
+import BackgroundPreview from 'features/backgroundPreview/BackgroundPreview';
+import BackgroundSelector from 'features/backgroundPreview/BackgroundSelector';
+import FileSelector from 'features/uploadDownload/FileSelector';
+import loadVideoMetadata, { VideoMetadata } from 'utils/loadVideoMetadata';
+import { backgroundFramesMax } from 'app/projectSlice';
+import 'app/app.css';
 
 const App: React.FC = () => {
   const [videoData, setVideoData] = useState<VideoMetadata | null>(null); 

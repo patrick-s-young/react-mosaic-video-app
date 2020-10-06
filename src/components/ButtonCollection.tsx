@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from 'Components/uiShared/Button';
-import { ButtonCollectionProps, ButtonConfigI } from 'Components/uiShared/uiShared.config';
+import Button from 'components/Button';
+import { ButtonCollectionProps, ButtonConfigI } from 'components/button.config';
 import { v1 as uuid } from 'uuid';
 
 

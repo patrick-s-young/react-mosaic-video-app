@@ -1,11 +1,11 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from 'Components/App/rootReducer';
-import ButtonCollection from 'Components/uiShared/ButtonCollection';
-import { StateValue } from 'Components/uiShared/uiShared.config';
-import { fileSelectorConfig } from 'Components/FileSelector/fileSelector.config';
-import { setFileStatus, FileStatus } from 'Components/App/projectSlice';
-import 'Components/FileSelector/fileSelector.css';
+import { RootState } from 'app/rootReducer';
+import ButtonCollection from 'components/ButtonCollection';
+import { StateValue } from 'components/button.config';
+import { fileSelectorConfig } from 'features/uploadDownload/fileSelector.config';
+import { setFileStatus, FileStatus } from 'app/projectSlice';
+import 'features/uploadDownload/fileSelector.css';
 
 const FileSelector: React.FC = () => {
   const dispatch = useDispatch();

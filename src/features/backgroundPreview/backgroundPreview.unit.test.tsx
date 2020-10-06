@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import store from 'Components/App/store';
-import BackgroundPreview from 'Components/BackgroundPreview/BackgroundPreview';
+import store from 'app/store';
+import BackgroundPreview from 'features/backgroundPreview/BackgroundPreview';
 import { screen, render, cleanup, fireEvent } from '@testing-library/react';
 
 beforeAll(() => {

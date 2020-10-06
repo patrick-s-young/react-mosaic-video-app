@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonProps } from 'Components/uiShared/uiShared.config';
+import { ButtonProps } from 'components/button.config';
 
 const Button: React.FC<ButtonProps> = ({
   onClickCallback,

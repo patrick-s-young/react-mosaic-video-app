@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import store from 'Components/App/store';
-import MosaicSelector from 'Components/MosaicSelector/MosaicSelector';
-import MosaicPreview from 'Components/MosaicPreview/MosaicPreview';
-import { TileCount } from 'Components/App/projectSlice';
+import store from 'app/store';
+import MosaicSelector from 'features/mosaicPreview/MosaicSelector';
+import MosaicPreview from 'features/mosaicPreview/MosaicPreview';
+import { TileCount } from 'app/projectSlice';
 import { screen, render, cleanup, fireEvent } from '@testing-library/react';
 
 beforeAll(() => {

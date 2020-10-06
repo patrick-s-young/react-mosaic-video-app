@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import store from 'Components/App/store';
-import MosaicPreview from 'Components/MosaicPreview/MosaicPreview';
+import store from 'app/store';
+import MosaicPreview from 'features/mosaicPreview/MosaicPreview';
 import { screen, render, cleanup, fireEvent } from '@testing-library/react';
 
 beforeAll(() => {
