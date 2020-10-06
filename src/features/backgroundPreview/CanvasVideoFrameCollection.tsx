@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, ReactElement } from 'react';
-import CanvasVideoFrame from 'Components/BackgroundPreview/CanvasVideoFrame';
+import CanvasVideoFrame from 'features/backgroundPreview/CanvasVideoFrame';
 
 interface CanvasVideoFrameCollectionProps {
   currentTimes: Array<number>,

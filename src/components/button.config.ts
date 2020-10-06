@@ -1,7 +1,7 @@
 import { 
   TileCount,          // <MosiacSelector>
   FileStatus,         // <FileSelector>
-} from 'Components/App/projectSlice';
+} from 'app/projectSlice';
 
 
 // <Button> and <ButtonCollection> project-specific config

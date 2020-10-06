@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { RootState } from 'Components/App/rootReducer';
-import 'Components/MosaicPreview/mosaicPreview.css';
+import { RootState } from 'app/rootReducer';
+import 'features/mosaicPreview/mosaicPreview.css';
 
 const MosaicPreview: React.FC = () => {
 	const { tileCount, fileStatus } = useSelector(

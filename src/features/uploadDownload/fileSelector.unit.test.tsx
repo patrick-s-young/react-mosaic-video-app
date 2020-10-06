@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import store from 'Components/App/store';
-import FileSelector from 'Components/FileSelector/FileSelector';
-import MosaicPreview from 'Components/MosaicPreview/MosaicPreview';
+import store from 'app/store';
+import FileSelector from 'features/uploadDownload/FileSelector';
+import MosaicPreview from 'features/mosaicPreview/MosaicPreview';
 import { screen, render, cleanup, fireEvent } from '@testing-library/react';
 
 beforeAll(() => {

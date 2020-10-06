@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { useSelector } from 'react-redux';
-import { RootState } from 'Components/App/rootReducer';
-import CanvasVideoFrameCollection from 'Components/BackgroundPreview/CanvasVideoFrameCollection';
+import { RootState } from 'app/rootReducer';
+import CanvasVideoFrameCollection from 'features/backgroundPreview/CanvasVideoFrameCollection';
 
 interface BackgroundPreviewProps {
   videoSrc: string

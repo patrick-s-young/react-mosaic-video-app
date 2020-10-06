@@ -1,6 +1,6 @@
 
-import { tileCounts } from 'Components/App/projectSlice';
-import { ButtonConfigI, ButtonCollectionConfigI } from 'Components/uiShared/uiShared.config';
+import { tileCounts } from 'app/projectSlice';
+import { ButtonConfigI, ButtonCollectionConfigI } from 'components/button.config';
 
 const mosaicSelectorButtonConfig: Array<ButtonConfigI> = tileCounts.map(tileCount => {
   return {

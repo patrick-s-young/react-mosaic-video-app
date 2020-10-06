@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from 'Components/App/rootReducer';
-import { setBackgroundFrame, BackgroundFrame, backgroundFramesMax } from 'Components/App/projectSlice';
+import { RootState } from 'app/rootReducer';
+import { setBackgroundFrame, BackgroundFrame, backgroundFramesMax } from 'app/projectSlice';
 
 const BackgroundSelector: React.FC = () => {
   const dispatch = useDispatch();

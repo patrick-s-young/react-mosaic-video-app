@@ -1,8 +1,8 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import store from 'Components/App/store';
-import BackgroundPreview from 'Components/BackgroundPreview/BackgroundPreview';
-import BackgroundSelector from 'Components/BackgroundSelector/BackgroundSelector';
+import store from 'app/store';
+import BackgroundPreview from 'features/backgroundPreview/BackgroundPreview';
+import BackgroundSelector from 'features/backgroundPreview/BackgroundSelector';
 import { screen, render, cleanup, fireEvent } from '@testing-library/react';
 
 afterEach(cleanup);

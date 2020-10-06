@@ -1,5 +1,5 @@
-import { FileStatus } from 'Components/App/projectSlice';
-import { ButtonConfigI, ButtonCollectionConfigI } from 'Components/uiShared/uiShared.config';
+import { FileStatus } from 'app/projectSlice';
+import { ButtonConfigI, ButtonCollectionConfigI } from 'components/button.config';
 
 const fileSelectorButtonConfig: Array<ButtonConfigI> = [
   {
