@@ -38,6 +38,7 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, './public'),
   },
+  devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html'
