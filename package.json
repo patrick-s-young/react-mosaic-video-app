@@ -1,10 +1,10 @@
 {
-  "name": "react-ts-eslint-webpack-babel",
+  "name": "video-mosaic-react-app",
   "version": "1.1.0",
-  "description": "Project Boilerplate for React / TypeScript / ESLint / Webpack / Babel / Jest with Directory Aliasing",
+  "description": "React video editing app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/patrick-s-young/react-ts-eslint-webpack-babel.git"
+    "url": "https://github.com/patrick-s-young/video-mosaic-react-app.git"
   },
   "main": "index.js",
   "scripts": {
